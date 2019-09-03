@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNhanVien">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật thông tin"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập họ tên"
+        android:id="@+id/edtHoTen"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngày tháng năm sinh"
+        android:id="@+id/edtNamSinh"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ"
+        android:id="@+id/edtDiaChi"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện thoại"
+        android:id="@+id/edtSDT"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu NV"
+        android:id="@+id/edtmatKhau"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên phòng ban"
+        android:id="@+id/edtPhongBan"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giới tính"
+        android:id="@+id/edtGioiTinh"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtHoTen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtGioiTinh"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa"
+                android:id="@+id/btnSua"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huỷ"
+                android:id="@+id/btnhuy"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
